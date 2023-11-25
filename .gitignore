@@ -1,0 +1,6 @@
+pkg/
+tmp/
+node_modules/
+public/
+.env
+go.work*
