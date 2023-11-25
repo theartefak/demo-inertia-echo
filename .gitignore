@@ -1,6 +1,7 @@
 pkg/
 tmp/
 node_modules/
-public/
+public/*
+!public/manifest.json
 .env
 go.work*
