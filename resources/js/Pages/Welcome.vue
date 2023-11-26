@@ -5,5 +5,5 @@ import { Head, Link } from '@inertiajs/vue3';
 <template>
     <Head title="Welcome" />
     <h1>Welcome</h1>
-    <Link :href="route('halo')">Halo</Link>
+    <Link :href="route('welcome')">Halo</Link>
 </template>

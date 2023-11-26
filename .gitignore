@@ -5,3 +5,4 @@ public/*
 !public/manifest.json
 .env
 go.work*
+database.db

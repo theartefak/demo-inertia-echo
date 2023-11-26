@@ -1,24 +1,22 @@
 package main
 
 import (
-	"net/http"
+	"log"
 
-	"github.com/labstack/echo/v4"
-	"github.com/theartefak/inertia-echo"
+	"github.com/theartefak/artefak/bootstrap"
 )
 
 func main() {
-    e := echo.New()
-    e.Use(inertia.Middleware(e))
-    e.Static("/", "./public")
+    // Initialize the application kernel
+	kernel, err := bootstrap.StartKernel()
+	if err != nil {
+		log.Fatalf("Error starting kernel: %s", err)
+	}
 
-    e.GET("/", hello).Name = "welcome"
-    e.GET("halo", hello).Name = "halo"
-
-    e.Logger.Fatal(e.Start("127.0.1.1:3000"))
-}
-
-func hello(c echo.Context) error {
-    // Status, Component Name, Data to pass on
-    return c.Render(http.StatusOK, "Welcome", map[string]interface{}{})
+	// Start the Echo server
+	err = kernel.Echo.Start(":8080")
+	if err != nil {
+		log.Fatalf("Error starting Echo server: %s", err)
+	}
+    kernel.Echo.Logger.Fatal(kernel.Echo.Start("127.0.1.1:3000"))
 }
