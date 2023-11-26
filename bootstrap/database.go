@@ -3,7 +3,6 @@ package bootstrap
 import (
 	"errors"
 	"log"
-	"os"
 
 	"github.com/glebarez/sqlite"
 	"github.com/theartefak/artefak/config"
@@ -25,7 +24,7 @@ func InitDB() (*gorm.DB, error) {
 	}
 
 	// Switch database driver based on the configuration
-	switch os.Getenv("DATABASE_DRIVER") {
+	switch config.DBDriver {
 	case "sqlite":
 		db, err = gorm.Open(sqlite.Open("models/database.db"), &gorm.Config{})
 	case "pgsql":

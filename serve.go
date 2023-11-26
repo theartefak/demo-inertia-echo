@@ -14,7 +14,7 @@ func main() {
 	}
 
 	// Start the Echo server
-	err = kernel.Echo.Start(":8080")
+	err = kernel.Echo.Start(":6969")
 	if err != nil {
 		log.Fatalf("Error starting Echo server: %s", err)
 	}
