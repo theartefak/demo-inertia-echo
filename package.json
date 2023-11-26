@@ -7,6 +7,9 @@
     "devDependencies": {
         "@inertiajs/vue3": "^1.0.14",
         "@vitejs/plugin-vue": "^4.5.0",
+        "autoprefixer": "^10.4.16",
+        "postcss": "^8.4.31",
+        "tailwindcss": "^3.3.5",
         "vite": "^5.0.2",
         "vue": "^3.3.9",
         "ziggy-js": "^1.8.1"
