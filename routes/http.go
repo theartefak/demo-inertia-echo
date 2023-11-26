@@ -7,6 +7,6 @@ import (
 
 // RegisterRoutes registers all routes for the application
 func HttpRoutes(e *echo.Echo, h *handlers.Handler) {
-    // Define your routes here using the Echo instance and your handler functions
-    e.GET("/", h.Welcome).Name = "welcome"
+	// Define your routes here using the Echo instance and your handler functions
+	e.GET("/", h.Welcome).Name = "welcome"
 }

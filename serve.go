@@ -18,5 +18,4 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error starting Echo server: %s", err)
 	}
-    kernel.Echo.Logger.Fatal(kernel.Echo.Start("127.0.1.1:3000"))
 }

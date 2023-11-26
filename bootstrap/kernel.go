@@ -1,8 +1,6 @@
 package bootstrap
 
 import (
-	"log"
-
 	"github.com/labstack/echo/v4"
 	"github.com/theartefak/artefak/config"
 	"github.com/theartefak/artefak/handlers"
@@ -13,9 +11,9 @@ import (
 
 // Kernel represents the application kernel
 type Kernel struct {
-    Echo   *echo.Echo
-    Config *config.AppConfig
-    DB     *gorm.DB
+	Echo   *echo.Echo
+	Config *config.AppConfig
+	DB     *gorm.DB
 }
 
 // StartKernel initializes a new application kernel
@@ -26,16 +24,15 @@ func StartKernel() (*Kernel, error) {
 	e.Static("/", "./public")
 
 	// Load configurations
-	cfg, err := config.LoadConfig()
+	cfg, err := config.Load()
 	if err != nil {
-		log.Fatalf("Error load config: %s", err)
+		return nil, err
 	}
 
 	// Initialize database
 	db, err := InitDB()
 	if err != nil {
-		// Log the error and return it
-		log.Printf("Error initializing database: %s", err)
+		// Handle the error, e.g., log and exit the application
 		return nil, err
 	}
 
