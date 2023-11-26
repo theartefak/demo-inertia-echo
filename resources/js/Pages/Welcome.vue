@@ -1,5 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import Guest from '@/Layouts/Guest.vue';
+defineOptions({ layout: Guest })
 </script>
 
 <template>
