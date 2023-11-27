@@ -24,11 +24,13 @@ const colorClass = computed(() => {
 </script>
 
 <template>
-    <button
-        :type="props.type"
-        :class="colorClass"
-        class="inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none transition ease-in-out duration-150"
-    >
-        <slot />
-    </button>
+    <div class="gap-3 grid grid-cols-[repeat(auto-fit,minmax(0,1fr))]">
+        <button
+            :type="props.type"
+            :class="colorClass"
+            class="relative grid-flow-col items-center justify-center font-semibold outline-none transition duration-75 focus-visible:ring-2 rounded-lg gap-1.5 px-3 py-2 text-sm inline-grid shadow-sm text-white"
+        >
+            <slot />
+        </button>
+    </div>
 </template>
