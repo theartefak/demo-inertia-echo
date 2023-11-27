@@ -31,7 +31,7 @@ const colorClass = computed(() => {
         <button
             :type="props.type"
             :class="colorClass"
-            class="relative inline-grid grid-flow-col items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold text-white shadow-sm outline-none transition duration-75 focus-visible:ring-2">
+            class="relative inline-grid grid-flow-col items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold shadow-sm outline-none transition duration-75 focus-visible:ring-2">
             <slot />
         </button>
     </div>

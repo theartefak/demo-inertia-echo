@@ -9,19 +9,19 @@ module.exports = {
         extend: {
             textColor: {
                 danger: {
-                    DEFAULT: 'rgba(var(--danger-100), <alpha-value>)',
+                    DEFAULT: 'rgba(var(--danger-50), <alpha-value>)',
                 },
                 info: {
-                    DEFAULT: 'rgba(var(--info-100), <alpha-value>)',
+                    DEFAULT: 'rgba(var(--info-50), <alpha-value>)',
                 },
                 primary: {
-                    DEFAULT: 'rgba(var(--primary-100), <alpha-value>)',
+                    DEFAULT: 'rgba(var(--primary-50), <alpha-value>)',
                 },
                 success: {
-                    DEFAULT: 'rgba(var(--success-100), <alpha-value>)',
+                    DEFAULT: 'rgba(var(--success-50), <alpha-value>)',
                 },
                 warning: {
-                    DEFAULT: 'rgba(var(--warning-100), <alpha-value>)',
+                    DEFAULT: 'rgba(var(--warning-50), <alpha-value>)',
                 },
             },
         },
