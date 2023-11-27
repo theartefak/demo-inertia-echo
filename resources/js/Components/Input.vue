@@ -36,7 +36,7 @@ defineExpose({ focus: () => input.value.focus() });
                 class="fi-fo-field-wrp-label inline-flex items-center gap-x-3"
                 :for="$attrs.id">
                 <span
-                    class="text-sm font-medium leading-6 text-gray-950 dark:text-white">
+                    class="cursor-pointer select-none text-sm font-medium leading-6 text-gray-950 dark:text-white">
                     {{ label }}
                     <sup
                         v-if="
