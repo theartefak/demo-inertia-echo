@@ -89,7 +89,7 @@ module.exports = {
             black: colors.black,
             white: colors.white,
             danger: {
-                DEFAULT: 'rgba(var(--danger-500), <alpha-value>)',
+                DEFAULT: 'rgba(var(--danger-600), <alpha-value>)',
                 50: 'rgba(var(--danger-50), <alpha-value>)',
                 100: 'rgba(var(--danger-100), <alpha-value>)',
                 200: 'rgba(var(--danger-200), <alpha-value>)',
@@ -116,7 +116,7 @@ module.exports = {
                 950: 'rgba(var(--gray-950), <alpha-value>)',
             },
             info: {
-                DEFAULT: 'rgba(var(--info-500), <alpha-value>)',
+                DEFAULT: 'rgba(var(--info-600), <alpha-value>)',
                 50: 'rgba(var(--info-50), <alpha-value>)',
                 100: 'rgba(var(--info-100), <alpha-value>)',
                 200: 'rgba(var(--info-200), <alpha-value>)',
@@ -130,7 +130,7 @@ module.exports = {
                 950: 'rgba(var(--info-950), <alpha-value>)',
             },
             primary: {
-                DEFAULT: 'rgba(var(--primary-500), <alpha-value>)',
+                DEFAULT: 'rgba(var(--primary-600), <alpha-value>)',
                 50: 'rgba(var(--primary-50), <alpha-value>)',
                 100: 'rgba(var(--primary-100), <alpha-value>)',
                 200: 'rgba(var(--primary-200), <alpha-value>)',
@@ -144,7 +144,7 @@ module.exports = {
                 950: 'rgba(var(--primary-950), <alpha-value>)',
             },
             success: {
-                DEFAULT: 'rgba(var(--success-500), <alpha-value>)',
+                DEFAULT: 'rgba(var(--success-600), <alpha-value>)',
                 50: 'rgba(var(--success-50), <alpha-value>)',
                 100: 'rgba(var(--success-100), <alpha-value>)',
                 200: 'rgba(var(--success-200), <alpha-value>)',
@@ -158,7 +158,7 @@ module.exports = {
                 950: 'rgba(var(--success-950), <alpha-value>)',
             },
             warning: {
-                DEFAULT: 'rgba(var(--warning-500), <alpha-value>)',
+                DEFAULT: 'rgba(var(--warning-600), <alpha-value>)',
                 50: 'rgba(var(--warning-50), <alpha-value>)',
                 100: 'rgba(var(--warning-100), <alpha-value>)',
                 200: 'rgba(var(--warning-200), <alpha-value>)',

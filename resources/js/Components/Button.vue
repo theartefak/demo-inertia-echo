@@ -14,11 +14,11 @@ const props = defineProps({
 
 const colorClass = computed(() => {
     return {
-        primary: 'bg-primary text-primary hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-800',
-        info: 'bg-info text-info hover:bg-info-600 focus:bg-info-600 active:bg-info-800',
-        warning: 'bg-warning text-warning hover:bg-warning-600 focus:bg-warning-600 active:bg-warning-800',
-        danger: 'bg-danger text-danger hover:bg-danger-600 focus:bg-danger-600 active:bg-danger-800',
-        success: 'bg-success text-success hover:bg-success-600 focus:bg-success-600 active:bg-success-800',
+        primary: 'bg-primary text-primary hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-700',
+        info: 'bg-info text-info hover:bg-info-500 focus:bg-info-500 active:bg-info-700',
+        warning: 'bg-warning text-warning hover:bg-warning-500 focus:bg-warning-500 active:bg-warning-700',
+        danger: 'bg-danger text-danger hover:bg-danger-500 focus:bg-danger-500 active:bg-danger-700',
+        success: 'bg-success text-success hover:bg-success-500 focus:bg-success-500 active:bg-success-700',
     }[props.color];
 });
 </script>
