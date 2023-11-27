@@ -1,8 +1,9 @@
 <script setup>
-import { Head, Link, useForm } from '@inertiajs/vue3';
+import { Head, useForm } from '@inertiajs/vue3';
 import Guest from '@/Layouts/Guest.vue';
 import Input from '@/Components/Input.vue';
 import Button from '@/Components/Button.vue';
+import Checkbox from '@/Components/Checkbox.vue';
 
 defineOptions({ layout: Guest });
 
@@ -29,6 +30,11 @@ const form = useForm({
             label="Username"
             v-model="form.email"
             autocomplete="username" />
+        <Checkbox
+            id="remember"
+            label="Remember me"
+            name="remember"
+            v-model:checked="form.remember" />
         <Button>Sign In</Button>
     </div>
 </template>
