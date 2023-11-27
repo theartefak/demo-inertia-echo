@@ -3,14 +3,16 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 
 export default defineConfig({
-    plugins: [vue({
-        template: {
-            transformAssetUrls: {
-                base: null,
-                includeAbsolute: false,
+    plugins: [
+        vue({
+            template: {
+                transformAssetUrls: {
+                    base: null,
+                    includeAbsolute: false,
+                },
             },
-        },
-    })],
+        }),
+    ],
     build: {
         manifest: 'manifest.json',
         outDir: resolve(__dirname, 'public'),

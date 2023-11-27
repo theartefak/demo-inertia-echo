@@ -1,11 +1,9 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: 'class',
-    content: [
-        "./resources/**/*.{js,vue,html}",
-    ],
+    content: ['./resources/**/*.{js,vue,html}'],
     theme: {
         extend: {
             textColor: {
@@ -113,5 +111,4 @@ module.exports = {
         },
     },
     plugins: [],
-}
-
+};
