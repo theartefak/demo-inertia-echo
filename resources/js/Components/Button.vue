@@ -27,12 +27,14 @@ const colorClass = computed(() => {
 </script>
 
 <template>
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-3">
-        <button
-            :type="props.type"
-            :class="colorClass"
-            class="relative inline-grid grid-flow-col items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold shadow-sm outline-none transition duration-75 focus-visible:ring-2">
-            <slot />
-        </button>
+    <div>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-3">
+            <button
+                :type="props.type"
+                :class="colorClass"
+                class="relative inline-grid grid-flow-col items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold shadow-sm outline-none transition duration-75 focus-visible:ring-2">
+                <slot />
+            </button>
+        </div>
     </div>
 </template>

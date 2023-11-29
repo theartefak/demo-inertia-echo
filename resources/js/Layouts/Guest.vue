@@ -5,13 +5,13 @@ import { Link } from '@inertiajs/vue3';
 <template>
     <div class="flex min-h-screen flex-col items-center">
         <div class="flex w-full flex-grow items-center justify-center">
-            <div
+            <main
                 class="my-16 w-full bg-white px-6 py-12 shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 sm:max-w-lg sm:rounded-xl sm:px-12">
                 <section class="grid auto-cols-fr gap-y-6">
-                    <header class="fi-simple-header">
+                    <header>
                         <div class="mb-4 flex justify-center">
                             <div
-                                class="fi-logo text-xl font-bold leading-5 tracking-tight text-gray-950 dark:text-white">
+                                class="text-xl font-bold leading-5 tracking-tight text-gray-950 dark:text-white">
                                 <Link href="/">Artefak</Link>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ import { Link } from '@inertiajs/vue3';
 
                     <slot />
                 </section>
-            </div>
+            </main>
         </div>
     </div>
 </template>
