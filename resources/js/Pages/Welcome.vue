@@ -4,8 +4,8 @@ import Guest from '@/Layouts/Guest.vue';
 import Input from '@/Components/Input.vue';
 import Button from '@/Components/Button.vue';
 import Checkbox from '@/Components/Checkbox.vue';
-import SimpleWrapForm from '@/Layouts/Wrapper/SimpleWrapForm.vue';
-import SimpleWrapField from '@/Layouts/Wrapper/SimpleWrapField.vue';
+import SimpleWrapForm from '@/Components/Wrapper/SimpleWrapForm.vue';
+import SimpleWrapField from '@/Components/Wrapper/SimpleWrapField.vue';
 
 defineOptions({ layout: Guest });
 
