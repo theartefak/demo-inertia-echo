@@ -75,5 +75,7 @@
         --warning-800: 146, 64, 14;
         --warning-900: 120, 53, 15;
         --warning-950: 69, 26, 3;
+
+        --sidebar-width: 18rem;
     }
 }
