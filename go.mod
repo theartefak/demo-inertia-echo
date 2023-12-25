@@ -1,4 +1,4 @@
-module github.com/theartefak/artefak
+module github.com/theartefak/demo-inertia-echo
 
 go 1.21.4
 
